@@ -1,42 +1,37 @@
-# Supermarket Object Dataset
-## Welcome to the Coles Supermarket Object Dataset
+## Welcome to GitHub Pages
 
-The dataset consists of 3D water-tight mesh models of 50 supermarket objects
+You can use the [editor on GitHub](https://github.com/lachlanchumbley/lachlanchumbley.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-The objects were picked from 10 different categories:
-- Small Box (Food)
-- Large Box (Food)
-- Regular Cylinder (Food)
-- Irregular Cylinder (Food)
-- Small Box
-- Large Box
-- Regular Cylinder
-- Irregular Cylinder
-- Packet
-- Irregular Shapes
+### Markdown
 
-The dataset was created to assist in the development of data-driven robotic grasping approaches.
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-You can down the dataset [**here**](https://github.com/lachlanchumbley/lachlanchumbley.github.io/edit/main/index.md).
+```markdown
+Syntax highlighted code block
 
-## The objects
+# Header 1
+## Header 2
+### Header 3
 
+- Bulleted
+- List
 
-<div float="left" style="display: flex; flex-direction: row; flex-wrap: wrap;">
-  {% for image in site.static_files %}
-      {% if image.path contains 'images' %}
-        {% if image.path contains '.png' %}
-            {% assign pathsplit = image.path | split: "/" %}
-            {% assign length = pathParts.size | minus: 1 %}
-            {% assign filesplit = pathsplit[length] | split: "." %}
-            <!-- ten percent for ten per row?? -->
-            <div style="width: 10%; min-width: 250px;">
-              <!-- <strong>Object Name:</strong> {{ filesplit[0] }}  -->
-              {{ filesplit[0] }}
-              <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="80%"/>
-            </div>
-        {% endif %}
-      {% endif %}
-  {% endfor %}
-</div>
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lachlanchumbley/lachlanchumbley.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
